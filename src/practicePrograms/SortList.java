@@ -41,6 +41,7 @@ public class SortList {
 //        list.sort(Integer::compare);
 
         list.sort(null);
+//        list.sort((a,b) -> b-a);         //Descending order
         System.out.println("After using comparator");
         System.out.println(list);
     }

@@ -38,7 +38,6 @@ public class Fruits {
         apple2.setColor("Blue");
         apple2.setPrice(300);
 
-
 //        List<Apple> apples = new ArrayList<>();
         List<Apple<String, Integer>> apples = new ArrayList<>();
         apples.add(apple);

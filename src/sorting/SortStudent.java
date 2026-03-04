@@ -1,8 +1,7 @@
-package practicePrograms;
+package sorting;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 
 class Student implements Comparable{
@@ -49,6 +48,5 @@ public class SortStudent {
 //        students.sort(comp);
         Collections.sort(students);
         System.out.println(students);
-
     }
 }
