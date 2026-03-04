@@ -23,10 +23,10 @@ public class SortList {
 //        };
 
 //        Using lambda expression
-        Comparator<Integer> comp = (Integer o1, Integer o2) -> {
-            if (o1 < o2) {
+        Comparator<Integer> comp = ( x, y) -> {
+            if (x < y) {
                 return -1;
-            } else if (o1 > o2) {
+            } else if (x > y) {
                 return 1;
             } else {
                 return 0;
@@ -34,8 +34,14 @@ public class SortList {
         };
 
 
+        System.out.println("Before using comparator");
         System.out.println(list);
-        list.sort(comp);
+//        list.sort(comp);
+//        Same work , we are making the use of compare() present in Integer instead of writing the same logic by ourself
+//        list.sort(Integer::compare);
 
+        list.sort(null);
+        System.out.println("After using comparator");
+        System.out.println(list);
     }
 }
